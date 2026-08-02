@@ -48,7 +48,7 @@ function quad4_B_and_detJ(xe, ye, xi, eta)
 
     # Derivatives with respect to physical coordinates (dN/dx, dN/dy)
     invJ = inv(J)
-    dN_phys = dN * invJ'
+    dN_phys = dN * invJ
 
     # Assemble B-matrix [3x8]
     B = zeros(3, 8)
